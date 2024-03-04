@@ -17,7 +17,7 @@ All strategies one can find in **src/strategies/** folder.
 
 There are results for these three stategies:
 
-| Strategy | Score |
+| Strategy | Profit ($) |
 | :---: | :---: | 
 | BaselineStrategy | 0.08498399999999262 |
 | MeduimStrategy | 0.5019369999999981 |
