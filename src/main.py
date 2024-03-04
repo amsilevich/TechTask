@@ -4,6 +4,7 @@ import sys
 from preparator import Preparator
 from evaluator import Evaluator
 from strategies.advanced import AdvancedStrategy
+from src.strategies.ideal import IdealStrategy
 from strategies.medium import MediumStrategy
 from strategies.baseline import BaselineStrategy
 
@@ -14,8 +15,6 @@ if __name__ == "__main__":
 
     preparator = Preparator(DATA_PATH)
     evaluator = Evaluator(*preparator.get_data())
-    strategy = MediumStrategy()
+    strategy = IdealStrategy()
     profit = evaluator.calculate_profit(strategy, START_BALANCE)
-    print(profit)
-    
-    
+    print("TOTAL STRATEGY PROFIT IS: ", round(profit, 8), "$", sep='')
