@@ -1,0 +1,5 @@
+numpy==1.21.2
+matplotlib==1.4.2
+typing==3.5
+flake8==5.0.4
+mypy==0.971
